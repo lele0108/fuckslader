@@ -1,0 +1,16 @@
+{
+  "name": "Fuck Slader",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Removes Slader's ability to block Adblock",
+  "homepage_url": "http://twitter.com/jimmyliu",
+  "content_scripts": [
+    {
+      "matches": ["*://*.slader.com/textbook/*"],
+      "js": ["jquery.js", "background.js"]
+    }
+  ],
+  "permissions": [
+    "*://*.slader.com/textbook/*"
+  ]
+}
